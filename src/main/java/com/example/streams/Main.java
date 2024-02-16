@@ -18,7 +18,11 @@ public class Main {
         shoppingList.add("milk");
         shoppingList.add("pasta");
         Stream<String> shoppingListStream = shoppingList.stream();
-        shoppingListStream.sorted().forEach(System.out::println);
+        shoppingListStream
+                .sorted()
+                .map(item -> item.toUpperCase()) // Function
+                .filter(item -> item.startsWith("P")) // Predicate
+                .forEach(System.out::println);
 
         Stream<String> letterStream = Stream.of("a", "b", "c");
     }
