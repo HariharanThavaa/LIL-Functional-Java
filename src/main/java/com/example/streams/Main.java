@@ -3,6 +3,7 @@ package com.example.streams;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Main {
@@ -18,11 +19,13 @@ public class Main {
         shoppingList.add("milk");
         shoppingList.add("pasta");
         Stream<String> shoppingListStream = shoppingList.stream();
-        shoppingListStream
+        List<String> p = shoppingList.stream()
                 .sorted()
                 .map(item -> item.toUpperCase()) // Function
                 .filter(item -> item.startsWith("P")) // Predicate
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+
+        System.out.println(p);
 
         Stream<String> letterStream = Stream.of("a", "b", "c");
     }

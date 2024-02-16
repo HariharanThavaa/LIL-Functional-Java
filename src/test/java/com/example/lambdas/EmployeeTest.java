@@ -1,4 +1,4 @@
-package com.example;
+package com.example.lambdas;
 
 import com.example.lambdas.Employee;
 import com.example.lambdas.EmployeeUtils;
