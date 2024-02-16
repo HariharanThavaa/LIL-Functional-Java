@@ -1,4 +1,6 @@
-package com.example;
+package com.example.lambdas;
+
+import com.example.lambdas.Employee;
 
 import java.util.function.Function;
 import java.util.function.Predicate;

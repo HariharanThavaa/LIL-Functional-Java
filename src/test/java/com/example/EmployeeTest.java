@@ -1,5 +1,7 @@
 package com.example;
 
+import com.example.lambdas.Employee;
+import com.example.lambdas.EmployeeUtils;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

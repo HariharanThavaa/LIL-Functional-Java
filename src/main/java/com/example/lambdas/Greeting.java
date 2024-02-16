@@ -1,4 +1,4 @@
-package com.example;
+package com.example.lambdas;
 
 @FunctionalInterface
 public interface Greeting {

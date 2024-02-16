@@ -1,4 +1,4 @@
-package com.example;
+package com.example.lambdas;
 
 public class HelloGreeting implements Greeting{
     @Override
